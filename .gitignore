@@ -1,0 +1,29 @@
+.DS_Store
+node_modules/
+node_modules_vue_2.7/
+node_modules_vue_2.6/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
+
+!build/lib/rain-docx/dist/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.webpack-cache/
+
+jsconfig.json
+
+# 活动页配置添加
+# https 证书相关
+cert.pem
+key.pem
