@@ -3,6 +3,8 @@
   "displayName": "Extract-nested-classes",
   "description": "Extract Nested Classes And Insert To Styles  ",
   "version": "0.0.1",
+  "publisher": "https://github.com/mrsai/extract-classes",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.94.0"
   },
