@@ -1,10 +1,11 @@
 {
   "name": "extract-classes",
-  "displayName": "Extract-nested-classes",
+  "displayName": "Css Extract",
   "description": "Extract Nested Classes And Insert To Styles  ",
   "version": "0.0.1",
-  "publisher": "https://github.com/mrsai/extract-classes",
+  "publisher": "saizhao",
   "icon": "images/icon.png",
+  "repository":"https://github.com/mrsai/extract-classes",
   "engines": {
     "vscode": "^1.94.0"
   },
