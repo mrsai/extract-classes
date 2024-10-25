@@ -1,0 +1,87 @@
+{
+  "name": "extract-classes",
+  "displayName": "Extract-nested-classes",
+  "description": "Extract Nested Classes And Insert To Styles  ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "exNestedClasses.nestedCssDisposable",
+        "title": "Nested Classes"
+      },
+      {
+        "command": "exNestedClasses.flattenCssDisposable",
+        "title": "Flatten Classes"
+      },
+      {
+        "command": "exNestedClasses.wrapInCssDisposable",
+        "title": "Wrap Classes"
+      },
+      {
+        "command": "exNestedClasses.wrapInSingleCssDisposable",
+        "title": "Single Wrap Classes"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "exNestedClasses.csseParent",
+        "label": "Css Extract"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "exNestedClasses.csseParent",
+          "when": "true",
+          "group": "navigation"
+        }
+      ],
+      "exNestedClasses.csseParent":[
+        {
+          "command": "exNestedClasses.nestedCssDisposable",
+          "when": "true",
+          "group": "navigation"
+        },
+        {
+          "command": "exNestedClasses.flattenCssDisposable",
+          "when": "true",
+          "group": "navigation"
+        },
+        {
+          "command": "exNestedClasses.wrapInCssDisposable",
+          "when": "true",
+          "group": "navigation"
+        },
+        {
+          "command": "exNestedClasses.wrapInSingleCssDisposable",
+          "when": "true",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.94.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0"
+  },
+  "dependencies": {
+    "htmlparser2": "^9.1.0"
+  }
+}
